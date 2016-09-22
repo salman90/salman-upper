@@ -1,0 +1,88 @@
+html, body {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+.navbar-brand>img {
+  width: 150px;
+  margin-top: -27px;
+}
+
+.navbar-brand>img:hover {
+
+}
+
+.navbar-default {
+  background-color: transparent;
+  border: 0px;
+  border-radius: 0px;
+}
+
+.navbar-default .navbar-nav>li>a {
+  text-transform: uppercase;
+  font-family: "Brandon Grotesque";
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+  -moz-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+  color: #7ECEFD;
+}
+
+#background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+video#backgroundVideo {
+  position: absolute;
+}
+
+p#backgroundText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 1;
+  color: #FFFFFF;
+  font-family: "Brandon Grotesque";
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  font-size: 40px;
+}
+
+#background>button {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  width: 20%;
+  transform: translateX(-50%) translateY(-50%);
+  background-color: transparent;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-family: "Brandon Grotesque";
+  letter-spacing: 2px;
+  box-shadow: 0px;
+  border: 1px solid #FFFFFF;
+  padding: 10px;
+  -moz-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+#background>button:hover {
+  background-color: #FFFFFF;
+  color: #000000;
+}
