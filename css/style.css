@@ -36,6 +36,10 @@ html, body {
   color: #7ECEFD;
 }
 
+.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+  border: 0px;
+}
+
 #background {
   position: absolute;
   width: 100%;
