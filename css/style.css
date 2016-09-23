@@ -1,9 +1,8 @@
 @font-face {
-  font-family: 'BrandonGrotesqueBold';
-  src: url('BrandonGrotesque-Regular.eot?') format('eot'),
+  font-family: 'Brandon Grotesque';
+  src: url('BrandonGrotesque-Regular.eot') format('eot'),
        url('BrandonGrotesque-Regular.woff2') format('woff2'),
        url('BrandonGrotesque-Regular.woff') format('woff'),
-       url('BrandonGrotesque-Regular.otf')  format('opentype'),
        url('BrandonGrotesque-Regular.ttf')  format('truetype'),
        url('BrandonGrotesque-Regular.svg') format('svg');
 }
