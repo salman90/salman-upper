@@ -1,10 +1,11 @@
 @font-face {
   font-family: 'Brandon Grotesque';
-  src: url('BrandonGrotesque-Regular.eot') format('eot'),
+  src: url('BrandonGrotesque-Regular.eot?') format('eot'),
        url('BrandonGrotesque-Regular.woff2') format('woff2'),
        url('BrandonGrotesque-Regular.woff') format('woff'),
+       url('BrandonGrotesque-Regular.otf')  format('opentype'),
        url('BrandonGrotesque-Regular.ttf')  format('truetype'),
-       url('BrandonGrotesque-Regular.svg') format('svg');
+       url('BrandonGrotesque-Regular.svg#BrandonGrotesque-Regular') format('svg');
 }
 
 html, body {
@@ -90,11 +91,6 @@ html, body {
   -moz-transform: scaleX(1);
   -o-transform: scaleX(1);
   transform: scaleX(1);
-}
-
-.navbar-default .navbar-nav>li>a:hover:after {
-  width: 100%;
-  background: #FFFFFF;
 }
 
 .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
