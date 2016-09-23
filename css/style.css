@@ -1,8 +1,21 @@
+@font-face {
+  font-family: 'BrandonGrotesqueBold';
+  src: url('BrandonGrotesque-Regular.eot?') format('eot'),
+       url('BrandonGrotesque-Regular.woff2') format('woff2'),
+       url('BrandonGrotesque-Regular.woff') format('woff'),
+       url('BrandonGrotesque-Regular.otf')  format('opentype'),
+       url('BrandonGrotesque-Regular.ttf')  format('truetype'),
+       url('BrandonGrotesque-Regular.svg') format('svg');
+}
+
 html, body {
   width: 100%;
   margin: 0px;
   padding: 0px;
-  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 .navbar-brand>img {
@@ -91,7 +104,7 @@ html, body {
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
   background-color: transparent;
-  color: #7ECEFD;
+  color: #FFFFFF;
 }
 
 video#backgroundVideo {
@@ -140,15 +153,15 @@ p#backgroundText {
 }
 
 div#about {
-  height: 1000px;
   padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 div#aboutText {
   margin-top: 5%;
 }
 
-h2#aboutTitle {
+h2#aboutTitle, h2#teamTitle {
   font-family: "Brandon Grotesque";
   font-weight: bold;
   text-transform: uppercase;
@@ -161,4 +174,20 @@ p#aboutContent {
   font-family: "Brandon Grotesque";
   font-size: 20px;
   margin-left: 15px;
+}
+
+div#team {
+  padding-top: 6%;
+}
+
+img#salmanImg, img#kenanImg, img#lynImg, img#tongImg {
+  width: 300px;
+  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+img#salmanImg, img#kenanImg {
+  margin-bottom: 100px;
 }

@@ -28,27 +28,30 @@ function logoScrollToTop() {
   });
 }
 
-function navbarColourChange() {;
-  var scroll_start = 0;
-  var about = $('#about');
-  var offset = about.offset();
-    if (about.length){
-      $(document).scroll(function() {
-        scroll_start = $(this).scrollTop();
-        if(scroll_start > offset.top) {
-          $(".navbar-default").css('background-color', '#3E454C');
-        } else {
-          $('.navbar-default').css('background-color', 'transparent');
-        }
-      });
+function navbarColourChange() {
+  $(window).scroll(function() {
+    if ($(document).scrollTop() > 200) {
+      $(".navbar-default").css("background-color", "#3E454C");
+    } else {
+      $(".navbar-default").css("background-color", "transparent");
     }
+  });
+}
+
+function buttonToAbout() {
+  $("button").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#about").offset().top},
+        1200);
+  });
 }
 
 function respond() {
   // Put all responsive functions here
   scrollSpy();
-  logoScrollToTop();
   navbarColourChange();
+  logoScrollToTop();
+  buttonToAbout();
 }
 
 $(document).ready(function() {
