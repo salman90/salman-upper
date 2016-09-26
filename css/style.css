@@ -1,10 +1,21 @@
 @font-face {
   font-family: 'Brandon Grotesque';
-  src: url('fonts/BrandonGrotesque-Regular.eot?') format('eot'),
-       url('fonts/BrandonGrotesque-Regular.woff2') format('woff2'),
-       url('fonts/BrandonGrotesque-Regular.woff') format('woff'),
-       url('fonts/BrandonGrotesque-Regular.ttf')  format('truetype'),
-       url('fonts/BrandonGrotesque-Regular.svg#BrandonGrotesque-Regular') format('svg');
+  src: url('../fonts/BrandonGrotesque-Regular.eot?') format('eot'),
+       url('../fonts/BrandonGrotesque-Regular.woff2') format('woff2'),
+       url('../fonts/BrandonGrotesque-Regular.woff') format('woff'),
+       url('../fonts/BrandonGrotesque-Regular.ttf') format('truetype'),
+       url('../fonts/BrandonGrotesque-Regular.otf') format('opentype'),
+       url('../fonts/BrandonGrotesque-Regular.svg#BrandonGrotesque-Regular') format('svg');
+}
+@font-face {
+  font-family: 'Brandon Grotesque Bold';
+  src: url('../fonts/Brandon_bld.eot?') format('eot'),
+       url('../fonts/Brandon_bld.woff2') format('woff2'),
+       url('../fonts/Brandon_bld.woff') format('woff'),
+       url('../fonts/Brandon_bld.ttf')  format('truetype'),
+       url('../fonts/Brandon_bld.otf') format('opentype'),
+       url('../fonts/Brandon_bld.svg#Brandon_bld') format('svg');
+  font-weight: bold;
 }
 
 html, body {
@@ -43,8 +54,7 @@ html, body {
 
 .navbar-default .navbar-nav>li>a {
   text-transform: uppercase;
-  font-family: "Brandon Grotesque";
-  font-weight: 500;
+  font-family: "Brandon Grotesque Bold";
   letter-spacing: 3px;
   color: #FFFFFF;
   -moz-transition: all .2s ease-in;
@@ -155,9 +165,8 @@ div#aboutText {
   margin-top: 5%;
 }
 
-h2#aboutTitle, h2#teamTitle, h2#serviceTitle {
-  font-family: "Brandon Grotesque";
-  font-weight: bold;
+h2#aboutTitle, h2#teamTitle {
+  font-family: "Brandon Grotesque Bold";
   text-transform: uppercase;
   letter-spacing: 2px;
   text-align: center;
@@ -171,8 +180,7 @@ p#aboutContent {
 }
 
 .serviceItemTitle {
-  font-weight: bold;
-  font-family: "Brandon Grotesque";
+  font-family: "Brandon Grotesque Bold";
   font-size: 20px;
   color: #fff;
   margin-top: 8px;
@@ -180,32 +188,58 @@ p#aboutContent {
   text-transform: uppercase;
 }
 
-.panel-success>.panel-heading {
-    background-color: #3e454c;
-}
-
-.panel-success {
-    border-color: #3e454c;
-}
-
-.panel-body p {
-  font-family: "Brandon Grotesque";
+h2#serviceTitle {
+  font-family: "Brandon Grotesque Bold";
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: -15px;
 }
 
 div#service {
-  padding-top: 100px;
+  padding-top: 7%;
   padding-bottom: 20px;
 }
 
-div#serviceContent {
-  margin-top: 5%;
+#webDevIcon, #webDesignIcon {
+  width: 300px;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: -30px;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+#webDevIcon:hover, #webDesignIcon:hover {
+  transform: scale(1.1);
+}
+
+div h4 {
+  font-family: "Brandon Grotesque Bold";
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 900;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+#serviceContent {
+  font-family: "Brandon Grotesque";
+  font-size: 15px;
+}
+
+ul li {
+  padding: 5px;
 }
 
 div#team {
   padding-top: 6%;
-  margin-left: auto;
+  /*margin-left: auto;
   margin-right: auto;
-  width: 100%;
+  width: 100%;*/
 }
 
 div#salmanImg {
@@ -252,10 +286,13 @@ div#tongImg {
   left: 0;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
+  -o-border-radius: 50%;
   border-radius: 50%;
   opacity: 0;
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
+  -webkit-transition: .5s ease;
+  -moz-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease;
 }
 
 .team-image:hover .overlay {
@@ -277,35 +314,139 @@ i:hover {
   margin: 50%;
 }
 
-#webDevIcon, #webDesignIcon {
-  width: 300px;
-  margin: 0 auto;
-  display: block;
-  margin-bottom: -30px;
-  -webkit-transition: all .2s ease-in-out;
-  -moz-transition: all .2s ease-in-out;
-  -o-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+section#contact {
+  background-color: #fff;
+  font-family: "Brandon Grotesque";
 }
 
-#webDevIcon:hover, #webDesignIcon:hover {
-  transform: scale(1.1);
-}
-
-div h4 {
-  text-align: center;
+section#contact .section-heading {
+  font-family: "Brandon Grotesque Bold";
+  font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-weight: 900;
-  margin-bottom: 20px;
-  font-size: 20px;
+  text-align: center;
+  padding-bottom: 20px;
 }
 
-#serviceContent {
+section#contact .form-group {
+  margin-bottom: 25px;
+}
+
+section#contact .form-group input,
+section#contact .form-group textarea {
+  padding: 20px;
+}
+
+section#contact .form-group input.form-control {
+  height: auto;
+}
+
+section#contact .form-group textarea.form-control {
+  height: 236px;
+}
+
+section#contact .form-control:focus {
+  border-color: #FF7F66;
+  box-shadow: none;
+}
+
+section#contact ::-webkit-input-placeholder {
+  font-family: "Brandon Grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  color: #CCCCCC;
+}
+
+section#contact :-moz-placeholder {
+  /* Firefox 18- */
+  font-family: "Brandon Grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  color: #CCCCCC;
+}
+
+section#contact ::-moz-placeholder {
+  /* Firefox 19+ */
+  font-family: "Brandon Grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  color: #CCCCCC;
+}
+
+section#contact :-ms-input-placeholder {
+  font-family: "Brandon Grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  color: #CCCCCC;
+}
+
+section#contact .text-danger {
+  color: #e74c3c;
+}
+
+section.contact {
+  text-align: center;
   font-family: "Brandon Grotesque";
-  font-size: 15px;
 }
 
-ul li {
-  padding: 5px;
+section.contact h2 {
+  margin-top: 0;
+  margin-bottom: 25px;
+  color: #3E454C;
+}
+
+section.contact h2 i {
+  color: #dd4b39;
+}
+
+section.contact ul.list-social {
+  margin-bottom: 0;
+}
+
+section.contact ul.list-social li a {
+  display: block;
+  height: 80px;
+  width: 80px;
+  line-height: 80px;
+  font-size: 40px;
+  border-radius: 100%;
+  color: white;
+}
+
+section.contact ul.list-social li.social-twitter a {
+  background-color: #1da1f2;
+}
+
+section.contact ul.list-social li.social-twitter a:hover {
+  background-color: #0d95e8;
+}
+
+section.contact ul.list-social li.social-facebook a {
+  background-color: #3b5998;
+}
+
+section.contact ul.list-social li.social-facebook a:hover {
+  background-color: #344e86;
+}
+
+section.contact ul.list-social li.social-google-plus a {
+  background-color: #dd4b39;
+}
+
+section.contact ul.list-social li.social-google-plus a:hover {
+  background-color: #d73925;
+}
+
+#contactButton {
+  border-radius: 4px;
+  background-color: #FF7F66;
+  color: #FFFFFF;
+  -moz-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+  width: 25%;
+  text-transform: uppercase;
+}
+
+#contactButton:hover {
+  background-color: #FFFFFF;
+  color: #3E454C;
+  border-color: #3E454C;
 }
