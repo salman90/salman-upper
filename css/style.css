@@ -19,7 +19,7 @@ html, body {
 
 .navbar-brand>img {
   width: 150px;
-  margin-top: -27px;
+  margin-top: -20px;
   -webkit-transition: all .2s ease-in-out;
   -moz-transition: all .2s ease-in-out;
   -o-transition: all .2s ease-in-out;
@@ -164,7 +164,7 @@ h2#aboutTitle, h2#teamTitle, h2#serviceTitle {
   padding-bottom: 20px;
 }
 
-p#aboutContent, p#serviceContent {
+p#aboutContent {
   font-family: "Brandon Grotesque";
   font-size: 20px;
   margin-left: 15px;
@@ -188,12 +188,16 @@ p#aboutContent, p#serviceContent {
     border-color: #3e454c;
 }
 
+.panel-body p {
+  font-family: "Brandon Grotesque";
+}
+
 div#service {
-  padding-top: 20px;
+  padding-top: 100px;
   padding-bottom: 20px;
 }
 
-div#serviceText {
+div#serviceContent {
   margin-top: 5%;
 }
 
@@ -271,4 +275,37 @@ i:hover {
 .icon{
   color: white;
   margin: 50%;
+}
+
+#webDevIcon, #webDesignIcon {
+  width: 300px;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: -30px;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+#webDevIcon:hover, #webDesignIcon:hover {
+  transform: scale(1.1);
+}
+
+div h4 {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 900;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+#serviceContent {
+  font-family: "Brandon Grotesque";
+  font-size: 15px;
+}
+
+ul li {
+  padding: 5px;
 }
