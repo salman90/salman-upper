@@ -30,7 +30,7 @@ html, body {
 
 .navbar-brand>img {
   width: 150px;
-  margin-top: -20px;
+  margin-top: -25px;
   -webkit-transition: all .2s ease-in-out;
   -moz-transition: all .2s ease-in-out;
   -o-transition: all .2s ease-in-out;
@@ -153,7 +153,7 @@ p#backgroundText {
 
 #background>button:hover {
   background-color: #FFFFFF;
-  color: #000000;
+  color: #3E454C;
 }
 
 div#about {
@@ -165,7 +165,7 @@ div#aboutText {
   margin-top: 5%;
 }
 
-h2#aboutTitle, h2#teamTitle {
+h2#aboutTitle, h2#teamTitle, h2#workTitle {
   font-family: "Brandon Grotesque Bold";
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -231,15 +231,8 @@ div h4 {
   font-size: 15px;
 }
 
-ul li {
-  padding: 5px;
-}
-
-div#team {
+/*div#team {
   padding-top: 6%;
-  /*margin-left: auto;
-  margin-right: auto;
-  width: 100%;*/
 }
 
 div#salmanImg {
@@ -312,14 +305,95 @@ i:hover {
 .icon{
   color: white;
   margin: 50%;
+}*/
+
+#work {
+  padding-top: 7%;
+  padding-bottom: 20px;
 }
 
-section#contact {
+h2#workTitle {
+  margin-bottom: 4%;
+}
+
+#eChartzContent p, #oddjobsContent p, #mappinContent p {
+  font-family: "Brandon Grotesque";
+  font-size: 18px;
+}
+
+#eChartzContent {
+  padding-top: 40px;
+}
+
+#eChartzContent a, #oddjobsContent a, #mappinContent a {
+  font-family: "Brandon Grotesque Bold";
+  text-transform: uppercase;
+  color: #FF7F66;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+#eChartzContent a:hover, #oddjobsContent a:hover, #mappinContent a:hover {
+  color: #7ECEFD;
+  text-decoration: none;
+}
+
+#eChartzLogo {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+#eChartzImage img, #mappinImage img {
+  width: 500px;
+  float: right;
+  border: 5px solid #7ECEFD;
+}
+
+#oddjobsLogo {
+  width: 150px;
+  margin-left: -7px;
+}
+
+#oddjobsImage img {
+  width: 500px;
+  float: left;
+  border: 5px solid #7ECEFD;
+}
+
+#oddjobsImage {
+  margin-top: 80px;
+}
+
+#oddjobsContent {
+  margin-top: 100px;
+  padding-top: 40px;
+  margin-bottom: 50px;
+}
+
+#mappinLogo {
+  width: 150px;
+  margin-left: -7px;
+}
+
+#mappinImage {
+  margin-top: 70px;
+}
+
+#mappinContent {
+  margin-top: 100px;
+  padding-top: 30px;
+}
+
+div#contact {
   background-color: #fff;
   font-family: "Brandon Grotesque";
+  padding-top: 8%;
+  margin-top: 20px;
 }
 
-section#contact .section-heading {
+div#contact .section-heading {
   font-family: "Brandon Grotesque Bold";
   font-weight: bold;
   text-transform: uppercase;
@@ -328,78 +402,78 @@ section#contact .section-heading {
   padding-bottom: 20px;
 }
 
-section#contact .form-group {
+div#contact .form-group {
   margin-bottom: 25px;
 }
 
-section#contact .form-group input,
-section#contact .form-group textarea {
+div#contact .form-group input,
+div#contact .form-group textarea {
   padding: 20px;
 }
 
-section#contact .form-group input.form-control {
+div#contact .form-group input.form-control {
   height: auto;
 }
 
-section#contact .form-group textarea.form-control {
+div#contact .form-group textarea.form-control {
   height: 236px;
 }
 
-section#contact .form-control:focus {
+div#contact .form-control:focus {
   border-color: #FF7F66;
   box-shadow: none;
 }
 
-section#contact ::-webkit-input-placeholder {
+div#contact ::-webkit-input-placeholder {
   font-family: "Brandon Grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   color: #CCCCCC;
 }
 
-section#contact :-moz-placeholder {
+div#contact :-moz-placeholder {
   /* Firefox 18- */
   font-family: "Brandon Grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   color: #CCCCCC;
 }
 
-section#contact ::-moz-placeholder {
+div#contact ::-moz-placeholder {
   /* Firefox 19+ */
   font-family: "Brandon Grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   color: #CCCCCC;
 }
 
-section#contact :-ms-input-placeholder {
+div#contact :-ms-input-placeholder {
   font-family: "Brandon Grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   color: #CCCCCC;
 }
 
-section#contact .text-danger {
+div#contact .text-danger {
   color: #e74c3c;
 }
 
-section.contact {
+div.contact {
   text-align: center;
   font-family: "Brandon Grotesque";
 }
 
-section.contact h2 {
+div.contact h2 {
   margin-top: 0;
   margin-bottom: 25px;
   color: #3E454C;
 }
 
-section.contact h2 i {
+div.contact h2 i {
   color: #dd4b39;
 }
 
-section.contact ul.list-social {
+div.contact ul.list-social {
   margin-bottom: 0;
 }
 
-section.contact ul.list-social li a {
+div.contact ul.list-social li a {
   display: block;
   height: 80px;
   width: 80px;
@@ -409,27 +483,27 @@ section.contact ul.list-social li a {
   color: white;
 }
 
-section.contact ul.list-social li.social-twitter a {
+div.contact ul.list-social li.social-twitter a {
   background-color: #1da1f2;
 }
 
-section.contact ul.list-social li.social-twitter a:hover {
+div.contact ul.list-social li.social-twitter a:hover {
   background-color: #0d95e8;
 }
 
-section.contact ul.list-social li.social-facebook a {
+div.contact ul.list-social li.social-facebook a {
   background-color: #3b5998;
 }
 
-section.contact ul.list-social li.social-facebook a:hover {
+div.contact ul.list-social li.social-facebook a:hover {
   background-color: #344e86;
 }
 
-section.contact ul.list-social li.social-google-plus a {
+div.contact ul.list-social li.social-google-plus a {
   background-color: #dd4b39;
 }
 
-section.contact ul.list-social li.social-google-plus a:hover {
+div.contact ul.list-social li.social-google-plus a:hover {
   background-color: #d73925;
 }
 
@@ -449,4 +523,40 @@ section.contact ul.list-social li.social-google-plus a:hover {
   background-color: #FFFFFF;
   color: #3E454C;
   border-color: #3E454C;
+}
+
+footer p {
+  text-align: center;
+  font-family: "Brandon Grotesque Bold";
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+footer hr {
+  width: 15%;
+}
+
+footer #socialMedia {
+  text-align: center;
+  margin-bottom: 7%;
+}
+
+#socialMedia a i {
+  padding: 15px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  font-size: 20px;
+}
+
+#socialMedia a i.fa-facebook {
+  color: #3B5998;
+}
+
+#socialMedia a i.fa-twitter {
+  color: #1DA1F2;
+}
+
+#socialMedia a i.fa-instagram {
+  color: #833AB4;
 }

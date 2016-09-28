@@ -13,7 +13,7 @@ function scrollSpy() {
         if (target.length) {
           $('html, body').animate({
             scrollTop: target.offset().top
-          }, 1000);
+          }, 1200);
           return false;
         }
       }
