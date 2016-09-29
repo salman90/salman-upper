@@ -332,6 +332,7 @@ h2#workTitle {
 }
 
 #eChartzContent a:hover, #oddjobsContent a:hover, #mappinContent a:hover {
+
   color: #7ECEFD;
   text-decoration: none;
 }
@@ -342,7 +343,7 @@ h2#workTitle {
 }
 
 #eChartzImage img, #mappinImage img {
-  width: 500px;
+  width: 100%;
   float: right;
   border: 5px solid #7ECEFD;
 }
@@ -353,8 +354,7 @@ h2#workTitle {
 }
 
 #oddjobsImage img {
-  width: 500px;
-  float: left;
+  width: 100%;
   border: 5px solid #7ECEFD;
 }
 
@@ -363,9 +363,15 @@ h2#workTitle {
 }
 
 #oddjobsContent {
+<<<<<<< HEAD
   margin-top: 100px;
   padding-top: 30px;
+=======
+  margin-top: 80px;
+  padding-top: 40px;
+>>>>>>> bc33f9977bda5ac9c1ae5e437786004544c0aa74
   margin-bottom: 50px;
+  float: right;
 }
 
 #mappinLogo {
@@ -379,7 +385,12 @@ h2#workTitle {
 
 #mappinContent {
   margin-top: 100px;
+<<<<<<< HEAD
   padding-top: 20px;
+=======
+  padding-top: 30px;
+
+>>>>>>> bc33f9977bda5ac9c1ae5e437786004544c0aa74
 }
 
 div#contact {
