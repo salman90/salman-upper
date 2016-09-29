@@ -124,7 +124,7 @@ p#backgroundText {
   transform: translateX(-50%) translateY(-50%);
   z-index: 1;
   color: #FFFFFF;
-  font-family: "Brandon Grotesque";
+  font-family: "Brandon Grotesque Bold";
   text-transform: uppercase;
   letter-spacing: 2px;
   text-align: center;
@@ -162,6 +162,7 @@ div#about {
 }
 
 div#aboutText {
+  text-align: center;
   margin-top: 5%;
 }
 
@@ -176,7 +177,6 @@ h2#aboutTitle, h2#teamTitle, h2#workTitle {
 p#aboutContent {
   font-family: "Brandon Grotesque";
   font-size: 20px;
-  margin-left: 15px;
 }
 
 .serviceItemTitle {
@@ -201,7 +201,7 @@ div#service {
   padding-bottom: 20px;
 }
 
-#webDevIcon, #webDesignIcon {
+#webDevIcon, #webDesignIcon, #brandingDesignIcon {
   width: 300px;
   margin: 0 auto;
   display: block;
@@ -210,10 +210,6 @@ div#service {
   -moz-transition: all .2s ease-in-out;
   -o-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
-}
-
-#webDevIcon:hover, #webDesignIcon:hover {
-  transform: scale(1.1);
 }
 
 div h4 {
@@ -368,7 +364,7 @@ h2#workTitle {
 
 #oddjobsContent {
   margin-top: 100px;
-  padding-top: 40px;
+  padding-top: 30px;
   margin-bottom: 50px;
 }
 
@@ -383,7 +379,7 @@ h2#workTitle {
 
 #mappinContent {
   margin-top: 100px;
-  padding-top: 30px;
+  padding-top: 20px;
 }
 
 div#contact {
