@@ -112,11 +112,11 @@ html, body {
 }
 
 video#backgroundVideo {
-  height: auto;
   width: 100%;
+  height: auto;
 }
 
-p#backgroundText {
+#backgroundContent>p {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -131,9 +131,9 @@ p#backgroundText {
   font-size: 40px;
 }
 
-#background>button {
+#backgroundContent>button {
   position: absolute;
-  top: 65%;
+  top: 60%;
   left: 50%;
   width: 20%;
   transform: translateX(-50%) translateY(-50%);
@@ -151,7 +151,7 @@ p#backgroundText {
   transition: all .2s ease-in;
 }
 
-#background>button:hover {
+#backgroundContent>button:hover {
   background-color: #FFFFFF;
   color: #3E454C;
 }
@@ -363,13 +363,8 @@ h2#workTitle {
 }
 
 #oddjobsContent {
-<<<<<<< HEAD
-  margin-top: 100px;
-  padding-top: 30px;
-=======
   margin-top: 80px;
   padding-top: 40px;
->>>>>>> bc33f9977bda5ac9c1ae5e437786004544c0aa74
   margin-bottom: 50px;
   float: right;
 }
@@ -385,12 +380,7 @@ h2#workTitle {
 
 #mappinContent {
   margin-top: 100px;
-<<<<<<< HEAD
   padding-top: 20px;
-=======
-  padding-top: 30px;
-
->>>>>>> bc33f9977bda5ac9c1ae5e437786004544c0aa74
 }
 
 div#contact {
@@ -524,6 +514,8 @@ div.contact ul.list-social li.social-google-plus a:hover {
   transition: all .2s ease-in;
   width: 25%;
   text-transform: uppercase;
+  padding: 10px;
+  letter-spacing: 2px;
 }
 
 #contactButton:hover {
@@ -566,4 +558,125 @@ footer #socialMedia {
 
 #socialMedia a i.fa-instagram {
   color: #833AB4;
+}
+
+/* RESPONSIVE STYLING */
+
+@media only screen and (max-device-width: 768px) {
+  .navbar-toggle.collapsed {
+    border: 0px;
+  }
+
+  .navbar-brand>img {
+    margin-top: -28px;
+  }
+
+  #backgroundContent p {
+    transform: translateX(-50%) translateY(-200%);
+  }
+
+  #backgroundContent button {
+    transform: translateX(-50%) translateY(-300%);
+  }
+
+  #eChartzContent {
+    margin-bottom: 20px;
+  }
+
+  #oddjobsImage {
+    margin-top: 0px;
+  }
+
+  #oddjobsContent {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  #mappinImage {
+    margin-top: 0px;
+  }
+
+  #mappinContent {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  h2#workTitle {
+    padding-bottom: 0px;
+    margin: 0px;
+    margin-top: 7%;
+  }
+
+  h2#contactTitle {
+    margin-top: 7%;
+  }
+
+  #contactButton {
+    width: 100%;
+  }
+
+  footer>hr {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-device-width: 480px) {
+
+  .navbar-brand>img {
+    width: 125px;
+    margin-top: -22px;
+  }
+
+  #backgroundContent p {
+    transform: translateX(-50%) translateY(-900%);
+    font-size: 20px;
+  }
+
+  #backgroundContent button {
+    display: none;
+  }
+
+  h2#workTitle {
+    padding-bottom: 0px;
+    margin: 0px;
+    margin-top: 10%;
+  }
+
+  h2#aboutTitle {
+    margin: 0px;
+    margin-top: 10%;
+  }
+
+  h2#contactTitle {
+    margin: 0px;
+    margin-top: 10%;
+  }
+
+  #contactButton {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-device-width: 412px) {
+  #background p {
+    transform: translateX(-50%) translateY(-850%);
+  }
+}
+
+@media only screen and (min-device-width: 375px) {
+  #background p {
+    transform: translateX(-50%) translateY(-1000%);
+  }
+}
+
+@media only screen and (min-device-width: 360px) {
+  #background p {
+    transform: translateX(-50%) translateY(-800%);
+  }
+}
+
+@media only screen and (min-device-width: 320px) {
+  #background p {
+    transform: translateX(-50%) translateY(-700%);
+  }
 }
