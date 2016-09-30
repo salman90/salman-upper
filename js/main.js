@@ -1,3 +1,5 @@
+var BASE_URL = 'localhost:3000';
+
 function scrollSpy() {
   $('body').scrollspy({ target: '#navbarScroll' });
 
@@ -73,4 +75,25 @@ $(window).resize(function() {
 });
 
 $(window).scroll(function() {
+});
+
+
+// contact form ajax
+$('#contactButton').click(function(event){
+  $.ajax({
+    url: BASE_URL + '/email',
+    type: 'POST',
+    data: { email:    $('#email').val(),
+            message:  $('#message').val(),
+            name:     $('#name').val(),
+            phone:    $('#phone').val()
+          },
+    success: function(data){
+      console.log(data);
+    },
+    error: function(error){
+      console.log(error);
+    }
+  });
+  event.preventDefault();
 });
