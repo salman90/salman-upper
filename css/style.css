@@ -346,6 +346,10 @@ h2#workTitle {
   width: 100%;
   float: right;
   border: 5px solid #7ECEFD;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 
 #oddjobsLogo {
@@ -356,10 +360,18 @@ h2#workTitle {
 #oddjobsImage img {
   width: 100%;
   border: 5px solid #7ECEFD;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 
 #oddjobsImage {
   margin-top: 80px;
+}
+
+#oddjobsImage img:hover, #eChartzImage img:hover, #mappinImage img:hover {
+  opacity: 0.5;
 }
 
 #oddjobsContent {
