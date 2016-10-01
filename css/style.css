@@ -116,7 +116,7 @@ video#backgroundVideo {
   height: auto;
 }
 
-#backgroundContent>p {
+#backgroundText {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -131,7 +131,7 @@ video#backgroundVideo {
   font-size: 40px;
 }
 
-#backgroundContent>button {
+ #background button {
   position: absolute;
   top: 60%;
   left: 50%;
@@ -151,7 +151,7 @@ video#backgroundVideo {
   transition: all .2s ease-in;
 }
 
-#backgroundContent>button:hover {
+#background button:hover {
   background-color: #FFFFFF;
   color: #3E454C;
 }
@@ -583,11 +583,11 @@ footer #socialMedia {
     margin-top: -28px;
   }
 
-  #backgroundContent p {
+  #backgroundText {
     transform: translateX(-50%) translateY(-200%);
   }
 
-  #backgroundContent button {
+  #background button {
     transform: translateX(-50%) translateY(-300%);
   }
 
@@ -639,12 +639,12 @@ footer #socialMedia {
     margin-top: -22px;
   }
 
-  #backgroundContent p {
+  #backgroundText {
     transform: translateX(-50%) translateY(-900%);
     font-size: 20px;
   }
 
-  #backgroundContent button {
+  #background button {
     display: none;
   }
 
@@ -669,26 +669,26 @@ footer #socialMedia {
   }
 }
 
-@media only screen and (min-device-width: 412px) {
+@media only screen and (max-device-width: 412px) {
   #background p {
     transform: translateX(-50%) translateY(-850%);
   }
 }
 
-@media only screen and (min-device-width: 375px) {
+@media only screen and (max-device-width: 375px) {
   #background p {
     transform: translateX(-50%) translateY(-1000%);
   }
 }
 
-@media only screen and (min-device-width: 360px) {
+@media only screen and (max-device-width: 360px) {
   #background p {
     transform: translateX(-50%) translateY(-800%);
   }
 }
 
-@media only screen and (min-device-width: 320px) {
+@media only screen and (max-device-width: 320px) {
   #background p {
     transform: translateX(-50%) translateY(-700%);
   }
-}
+}*/
