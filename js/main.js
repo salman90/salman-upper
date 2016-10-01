@@ -1,4 +1,4 @@
-var BASE_URL = 'localhost:3000';
+var BASE_URL = 'http://localhost:3000';
 
 function scrollSpy() {
   $('body').scrollspy({ target: '#navbarScroll' });
@@ -89,9 +89,12 @@ $('#contactButton').click(function(event){
             phone:    $('#phone').val()
           },
     success: function(data){
+      // prompt pop-up success message here
+      $("#contactForm")[0].reset();
       console.log(data);
     },
     error: function(error){
+      // prompt pop-up failure message
       console.log(error);
     }
   });
