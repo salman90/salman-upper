@@ -1,4 +1,4 @@
-var BASE_URL = 'http://localhost:3000';
+var BASE_URL = 'https://uppercase-mailer.herokuapp.com';
 
 function scrollSpy() {
   $('body').scrollspy({ target: '#navbarScroll' });
