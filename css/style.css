@@ -258,6 +258,10 @@ div#wilsonImg {
   border-radius: 50%;
 }
 
+.overlay {
+  padding-bottom: 50px;
+}
+
 .overlay>h3 {
   font-family: "Brandon Grotesque Bold";
   letter-spacing: 2px;
@@ -560,6 +564,12 @@ footer #socialMedia {
 
 /* RESPONSIVE STYLING */
 @media only screen and (max-device-width: 768px) {
+  /*.imgDescription {
+    margin-right: 20px;
+  }*/
+}
+
+@media only screen and (max-device-width: 768px) {
   .navbar-toggle.collapsed {
     border: 0px;
   }
@@ -689,18 +699,23 @@ footer #socialMedia {
 }*/
 
 
-.imgDescription {
+.imgWrap .imgDescription {
   position: absolute;
   top: 0;
-  bottom: 0;
   left: 0;
   right: 0;
-  margin-left: 70px;
   width: 250px;
   height: 250px;
   border-radius: 50%;
   color: #fff;
   opacity: 0;
+  margin: auto 0;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 
@@ -710,6 +725,11 @@ footer #socialMedia {
   background-color: #333;
 }
 
-.imgDescription p {
+.imgDescription>p {
   margin-top: 50px;
+  color: #FFFFFF;
+  font-family: "Brandon Grotesque";
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
 }
