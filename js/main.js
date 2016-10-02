@@ -90,3 +90,7 @@ $('#contactButton').click(function(event){
   });
   event.preventDefault();
 });
+
+$(document).ready(function() {
+    $('#contactForm').bootstrapValidator();
+});

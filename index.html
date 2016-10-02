@@ -113,12 +113,13 @@
         <div class="row col-lg-12">
           <div id="eChartz">
             <div id="eChartzContent" class="col-md-6 col-sm-12">
-              <img id="eChartzLogo" src="img/echartz.png" alt="eChartz" />
+              <img id="eChartzLogo" src="img/echartz.png" alt="eChartz"/>
               <p>eChartz is a simple web application, built with Node.js, for making dynamic two dimensional charts. Users can enter their data or copy and paste their own excel data into the table and generate charts based on it.</p>
               <a href="http://echartz.herokuapp.com/">check it out here!</a>
             </div>
             <div id="eChartzImage" class="col-md-6 col-sm-12">
-              <img src="img/echartz-image.png" />
+              <a href="http://echartz.herokuapp.com/">
+              <img src="img/echartz-image.png" /></a>
             </div>
           </div>
         </div>
@@ -130,7 +131,8 @@
               <a href="http://kenanphilips-oddjobs.herokuapp.com/">check it out here!</a>
             </div>
             <div id="oddjobsImage" class="col-md-6 col-sm-12">
-              <img src="img/oddjobs-image.png" />
+              <a href="http://kenanphilips-oddjobs.herokuapp.com/">
+              <img src="img/oddjobs-image.png" /></a>
             </div>
           </div>
         </div>
@@ -142,7 +144,8 @@
               <a href="http://mappinyvr.herokuapp.com/">check it out here!</a>
             </div>
             <div id="mappinImage" class="col-md-6 col-sm-12">
-              <img src="img/mappin-image.png" />
+              <a href="http://mappinyvr.herokuapp.com/">
+              <img src="img/mappin-image.png" /></a>
             </div>
           </div>
         </div>
@@ -165,7 +168,13 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Name *" id="name" required data-validation-required-message="Please enter your name.">
+                    <input type="text" class="form-control" placeholder="Name *" id="name" required data-validation-required-message="Please enter your name."data-bv-message="The username is not valid"
+
+                required
+                data-bv-notempty-message="The username is required and cannot be empty"
+
+                pattern="[a-zA-Z0-9]+"
+                data-bv-regexp-message="The username can only consist of alphabetical, number" />
                     <p class="help-block text-danger"></p>
                   </div>
                   <div class="form-group">
