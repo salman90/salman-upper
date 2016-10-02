@@ -258,6 +258,16 @@ div#wilsonImg {
   border-radius: 50%;
 }
 
+.overlay>h3 {
+  font-family: "Brandon Grotesque Bold";
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.overlay>p {
+  text-transform: lowercase;
+}
+
 i {
   color: #FFFFFF;
 }
@@ -540,8 +550,15 @@ footer #socialMedia {
   color: #833AB4;
 }
 
-/* RESPONSIVE STYLING */
+#socialMedia a i.fa-linkedin {
+  color: #0077B5;
+}
 
+#socialMedia a i:hover {
+  opacity: 0.8;
+}
+
+/* RESPONSIVE STYLING */
 @media only screen and (max-device-width: 768px) {
   .navbar-toggle.collapsed {
     border: 0px;
