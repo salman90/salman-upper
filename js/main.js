@@ -41,7 +41,7 @@ function navbarColourChange() {
 }
 
 function buttonToAbout() {
-  $("button").click(function() {
+  $("#learnMore").click(function() {
     $('html,body').animate({
         scrollTop: $("#about").offset().top},
         1200);

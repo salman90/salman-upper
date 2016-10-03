@@ -38,7 +38,7 @@
         <source src="media/Hello-World.webm" type="video/webm">Your browser does not support the HTML5 video. I suggest you upgrade your browser.
       </video>
       <p id="backgroundText">you found us</p>
-      <button class="btn btn-default">Learn More</button>
+      <button id="learnMore" class="btn btn-default">Learn More</button>
     </div>
 
     <div id="about">
@@ -78,8 +78,8 @@
           <div class="col-sm-4 text-center">
             <div class="imgWrap">
               <img src="img/team/salman.jpeg" id="profile-image">
-              <div class="imgDescription">
-                <p>Salman is a full-stack developer and founding partner at Uppercase, where his responsibilities include full stack web-development and business development management.He has a bachelors degree in Marketing and 3 years of experience as the business development manager at Baraka Optics.</p>
+              <div class="imgDescription" id="salman">
+                <p>Salman is a business manager turned web developer with a Bachelors Degree in marketing and the experience to prove it. He loves to travel and have a good time!</p>
               </div>
             </div>
             <div class="overlay">
@@ -98,8 +98,8 @@
           <div class="col-sm-4 text-center">
             <div class="imgWrap">
               <img src="img/team/kenan.jpg" id="profile-image">
-              <div class="imgDescription">
-                <p>Kenan is a web developer and designer who specializes in creating modern and minimalist web pages. He is always eager to learn and grow his knowledge and skills. When he's not coding or designing, you can either find him cooking, or playing the electric guitar and listening to Indie Rock records.</p>
+              <div class="imgDescription" id="kenan">
+                <p>Kenan is a web developer and designer who specializes in creating modern and minimalist web pages. He has a eye for modern design and is always eager to grow his knowledge and skills. When he's not coding, you can either find him  playing the guitar and listening to Indie Rock records.</p>
               </div>
             </div>
             <div class="overlay">
@@ -118,9 +118,9 @@
           <div class="col-sm-4 text-center">
             <div class="imgWrap">
               <img src="img/team/lyn.jpeg" id="profile-image">
-              <div class="imgDescription">
+              <div class="imgDescription" id="lyn">
                 <br>
-                <p>Lyn is a full stack web developer with Bachelor of Science. Passionate about learning new technologies and public/international health. In her free time, Lyn loves drinking good coffee or tea while watching cute animal clips</p>
+                <p>Lyn is a full stack web developer with a Bachelor of Science who is passionate about learning new technologies and public / international health. In her free time, Lyn loves to drink good coffee or tea while watching cute animal clips.</p>
               </div>
             </div>
             <div class="overlay">
@@ -142,9 +142,9 @@
           <div class="col-sm-4 text-center">
             <div class="imgWrap">
               <img src="img/team/tong.jpeg" id="profile-image">
-              <div class="imgDescription">
+              <div class="imgDescription" id="tong">
                 <br>
-                <p> Tong is a full-stack web developer with experience from UX design to final deployment. She is completely committed to fulfill all needs to achieve client satisfaction. When she is not working, you might find her boarding at the skatepark.</p>
+                <p>Tong is a full-stack web developer with experience ranging from UX design to application deployment. She is committed to fulfill all needs to achieve client satisfaction. When she is not working, you might find her boarding at the skatepark.</p>
                 </div>
             <div class="overlay">
               <h3>Tong Wei</h2>
@@ -160,9 +160,9 @@
           <div class="col-sm-4 text-center">
             <div class="imgWrap">
               <img src="img/team/wilson.png" id="profile-image">
-              <div class="imgDescription">
+              <div class="imgDescription" id="wilson">
                 <br>
-                <p>Wilson is a full-stack developer who enjoys solving problems in the most efficient way. He is enthusiastic about learning new technologies and methods.</p>
+                <p>Wilson is a full stack developer who loves learning new technologies and enjoys solving problems in the most efficient way. In his free time you can find him watching anime and reading manga.</p>
               </div>
             </div>
             <div class="overlay">
@@ -209,7 +209,7 @@
           <div id="mappin">
             <div id="mappinContent" class="col-md-6 col-sm-12">
               <img id="mappinLogo" src="img/mappin-logo.png" alt="Mappin" />
-              <p>Map’pin is a local online social networking community tailored to a user’s location. Unique features include a display of the user’s location using browser location/gmaps4rails, post creation on map click using AJAX/rendering partial JSON, and post display on infowindow using markerclusterer.</p>
+              <p>Map’pin is a local online social networking community tailored to a user’s location. Unique features include a display of the user’s location using browser location / gmaps4rails, post creation on map click using AJAX / rendering partial JSON, and post display on infowindow using markerclusterer.</p>
               <a href="http://mappinyvr.herokuapp.com/" target="_blank">check it out here!</a>
             </div>
             <div id="mappinImage" class="col-md-6 col-sm-12">
@@ -230,41 +230,6 @@
         </div>
         <div class="row">
           <div class="col-lg-12">
-
-            <!--  Original Form -->
-
-            <!-- <form name="sentMessage" id="contact_form">
-              <div class="row">
-                <div class="col-md-6"> -->
-                  <!-- <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Name *" id="name" name="name">
-                  </div> -->
-                  <!-- <div class="form-group">
-                    <input type="email" class="form-control" placeholder="Email *" id="email" name="email" />
-                    <p class="help-block text-danger"></p>
-                  </div> -->
-                  <!-- <div class="form-group">
-                    <input type="tel" class="form-control" placeholder="Phone *" id="phone" name="phone" />
-                    <p class="help-block text-danger"></p>
-                  </div> -->
-                <!-- </div>
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <textarea class="form-control" placeholder="Message *" id="message" name="message"></textarea>
-                    <p class="help-block text-danger"></p>
-                  </div>
-                </div> -->
-                <!-- <div class="clearfix"></div>
-                <div class="col-lg-12 text-center"> -->
-                  <!-- <div id="success"></div> -->
-                  <!-- <button id="contactButton" type="submit" class="btn btn-xl">submit</button> -->
-                <!-- </div>
-              </div>
-            </form> -->
-
-
-            <!-- New form with validation -->
-
             <form name="sentMessage" id="contactForm">
               <div class="row">
                 <div class="col-md-6">
@@ -288,14 +253,15 @@
               </div>
 
           <!-- Success message -->
-          <div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting us, we will get back to you shortly.</div>
+
+          <div class="alert alert-success collapse" role="alert" id="success_message">Thanks for contacting us! We'll get back to you shortly.</div>
 
 
               <!-- Button -->
                 <div class="clearfix"></div>
                 <div class="col-lg-12 text-center">
                   <div id="success"></div>
-                  <button id="contactButton" type="submit" class="btn btn-xl">submit</button>
+                  <button id="contactButton" class="btn btn-xl">submit</button>
                 </div>
             </form>
 
