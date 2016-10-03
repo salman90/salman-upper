@@ -108,7 +108,6 @@ $(window).scroll(function() {
 $(document).ready(function() {
   $('#success_message').hide();
   $('#contactForm').bootstrapValidator({
-      // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
     feedbackIcons: {
       valid: 'glyphicon glyphicon-ok',
       invalid: 'glyphicon glyphicon-remove',
