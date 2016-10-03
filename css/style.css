@@ -473,44 +473,6 @@ div.contact h2 i {
   color: #dd4b39;
 }
 
-div.contact ul.list-social {
-  margin-bottom: 0;
-}
-
-div.contact ul.list-social li a {
-  display: block;
-  height: 80px;
-  width: 80px;
-  line-height: 80px;
-  font-size: 40px;
-  border-radius: 100%;
-  color: white;
-}
-
-div.contact ul.list-social li.social-twitter a {
-  background-color: #1da1f2;
-}
-
-div.contact ul.list-social li.social-twitter a:hover {
-  background-color: #0d95e8;
-}
-
-div.contact ul.list-social li.social-facebook a {
-  background-color: #3b5998;
-}
-
-div.contact ul.list-social li.social-facebook a:hover {
-  background-color: #344e86;
-}
-
-div.contact ul.list-social li.social-google-plus a {
-  background-color: #dd4b39;
-}
-
-div.contact ul.list-social li.social-google-plus a:hover {
-  background-color: #d73925;
-}
-
 #contactButton {
   border-radius: 4px;
   background-color: #FF7F66;
@@ -576,12 +538,6 @@ footer #socialMedia {
 }
 
 /* RESPONSIVE STYLING */
-@media only screen and (max-device-width: 768px) {
-  /*.imgDescription {
-    margin-right: 20px;
-  }*/
-}
-
 @media only screen and (max-device-width: 768px) {
   .navbar-toggle.collapsed {
     border: 0px;
@@ -701,16 +657,6 @@ footer #socialMedia {
   }
 }
 
- /*#profile-image {
-   opacity: 1;
- 	-webkit-transition: .3s ease-in-out;
- 	transition: .3s ease-in-out;
- }
-
-#profile-image:hover {
-  opacity: .5;
-}*/
-
 
 .imgWrap .imgDescription {
   position: absolute;
@@ -722,7 +668,6 @@ footer #socialMedia {
   border-radius: 50%;
   color: #fff;
   opacity: 0;
-  margin: auto 0;
   margin-left: auto;
   margin-right: auto;
   -webkit-transition: all .3s ease-in-out;
@@ -739,10 +684,32 @@ footer #socialMedia {
 }
 
 .imgDescription>p {
-  margin-top: 50px;
+  margin-top: 40px;
   color: #FFFFFF;
   font-family: "Brandon Grotesque";
   width: 200px;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
+}
+
+.social>a>i {
+  color: #3E454C;
+  padding: 0px 10px 0px 10px;
+}
+
+.social>a>i.fa-facebook:hover {
+  color: #3B5998;
+}
+
+.social>a>i.fa-twitter:hover {
+  color: #1DA1F2;
+}
+
+.social>a>i.fa-linkedin:hover {
+  color: #0077B5;
+}
+
+.social>a>i.fa-envelope:hover {
+  color: #FF7F66;
 }
