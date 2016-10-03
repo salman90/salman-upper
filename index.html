@@ -188,7 +188,7 @@
           <h2 id="workTitle">our work.</h2>
           <div id="eChartz">
             <div id="eChartzContent" class="col-md-6 col-sm-12">
-              <img id="eChartzLogo" src="img/echartz.png" alt="eChartz" />
+              <img id="eChartzLogo" src="img/echartz.png" alt="eChartz"/>
               <p>eChartz is a simple web application, built with Node.js, for making dynamic two dimensional charts. Users can enter their data or copy and paste their own excel data into the table and generate charts based on it.</p>
               <a href="http://echartz.herokuapp.com/" target="_blank">check it out here!</a>
             </div>
@@ -234,28 +234,65 @@
         </div>
         <div class="row">
           <div class="col-lg-12">
-            <form name="sentMessage" id="contactForm" novalidate>
+
+            <!--  Original Form -->
+
+            <!-- <form name="sentMessage" id="contact_form">
+              <div class="row">
+                <div class="col-md-6"> -->
+                  <!-- <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Name *" id="name" name="name">
+                  </div> -->
+                  <!-- <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Email *" id="email" name="email" />
+                    <p class="help-block text-danger"></p>
+                  </div> -->
+                  <!-- <div class="form-group">
+                    <input type="tel" class="form-control" placeholder="Phone *" id="phone" name="phone" />
+                    <p class="help-block text-danger"></p>
+                  </div> -->
+                <!-- </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <textarea class="form-control" placeholder="Message *" id="message" name="message"></textarea>
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div> -->
+                <!-- <div class="clearfix"></div>
+                <div class="col-lg-12 text-center"> -->
+                  <!-- <div id="success"></div> -->
+                  <!-- <button id="contactButton" type="submit" class="btn btn-xl">submit</button> -->
+                <!-- </div>
+              </div>
+            </form> -->
+
+
+            <!-- New form with validation -->
+
+            <form name="sentMessage" id="contactForm">
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Name *" id="name" required data-validation-required-message="Please enter your name.">
-                    <p class="help-block text-danger"></p>
+                    <input name="name" placeholder="Name *" class="form-control" type="text" id="name">
                   </div>
                   <div class="form-group">
-                    <input type="email" class="form-control" placeholder="Email *" id="email" required data-validation-required-message="Please enter your email address.">
-                    <p class="help-block text-danger"></p>
+                    <input name="email" placeholder="Email *" class="form-control" type="text" id="email">
                   </div>
                   <div class="form-group">
-                    <input type="tel" class="form-control" placeholder="Phone *" id="phone" required data-validation-required-message="Please enter your phone number.">
-                    <p class="help-block text-danger"></p>
+                    <input name="phone" placeholder="Phone *" class="form-control" type="text" id="phone">
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
-                    <textarea class="form-control" placeholder="Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                    <textarea class="form-control" name="comment" placeholder="message *" id="message"></textarea>
                     <p class="help-block text-danger"></p>
                   </div>
                 </div>
+
+          <!-- Success message -->
+          <!-- <div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting us, we will get back to you shortly.</div> -->
+
+              <!-- Button -->
                 <div class="clearfix"></div>
                 <div class="col-lg-12 text-center">
                   <div id="success"></div>
@@ -263,10 +300,12 @@
                 </div>
               </div>
             </form>
+
           </div>
         </div>
       </div>
     </div>
+
 
     <footer>
       <hr>
@@ -283,6 +322,7 @@
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src= "https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/js/bootstrapValidator.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
   </body>
