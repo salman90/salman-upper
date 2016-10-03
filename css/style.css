@@ -685,13 +685,32 @@ footer #socialMedia {
 }
 
 .imgDescription>p {
-  margin-top: 40px;
   color: #FFFFFF;
   font-family: "Brandon Grotesque";
   width: 200px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+}
+
+#salman>p {
+  margin-top: 80px;
+}
+
+#kenan>p {
+  margin-top: 40px;
+}
+
+#lyn>p {
+  margin-top: 35px;
+}
+
+#tong>p {
+  margin-top: 35px;
+}
+
+#wilson>p {
+  margin-top: 50px;
 }
 
 .social>a>i {
