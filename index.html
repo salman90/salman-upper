@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" >
     <link rel="stylesheet" href="css/font-awesome.min.css" >
     <link href="css/style.css" rel="stylesheet">
+
   </head>
   <body data-spy="scroll" data-target="#navbarScroll">
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation" data-spy="affix">
@@ -18,11 +19,12 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#"><img src="img/uppercase-logo-white.png"/></a>
+          <a class="navbar-brand" href="#"><img src="img/uppercase-logo-white.png"/></a><p id="tag">web development <span>&</span> design.</p>
         </div>
         <div class="navbar-collapse collapse" id="navbarScroll">
           <ul class="nav navbar-nav navbar-right" id="topNav" role="tablist">
             <li><a href="#about">about us</a></li>
+            <li><a href="#team">our team</a></li>
             <li><a href="#work">our work</a></li>
             <li><a href="#contact">contact us</a></li>
           </ul>
@@ -42,80 +44,113 @@
     <div id="about">
       <div class="container" id="aboutText">
         <h2 id="aboutTitle">who we are and what we do.</h2>
-        <p id="aboutContent">At Uppercase, we are passionate about building and designing beautiful websites and mobile applications. Our goal is to create a better user experience rooted in smart design and backed by the right technology that ensures the long sustainability of our products.</p>
+        <p id="aboutContent">Uppercase is an integrated software provider that offers a range of solutions to clients seeking web development, design, and visual branding. At Uppercase, we listen, advise, and guide our clients through the creation process to ensure that virtual identity.</p>
       </div>
       <div class="container">
         <div id="serviceContent">
           <div class="col-md-4">
             <img id="webDevIcon" src="img/icons/web-dev.png" />
             <h4>web development</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-            <ul>
-              <li>Frontend and Backend Web Development</li>
-              <li>Website and Content Management</li>
-            </ul>
+            <p>From websites and web pages to electronic applications, we develop functional software to create efficient user interfaces. Our Web and Content Management System ensures that products are easily scalable, content is easily editable, and more to provide our clients and their users with unparalleled efficiency.</p>
           </div>
           <div class="col-md-4">
             <img id="webDesignIcon" src="img/icons/web-design.png" />
             <h4>web design</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-            <ul>
-              <li>Website Design</li>
-              <li>Application Design</li>
-              <li>Browser Optimization</li>
-              <li>Responsive Design</li>
-            </ul>
+            <p>To match our strong backend skills, we establish the right aesthetic for each website or application by determining the layout, colors, text styles, structure, images, graphics, and the use of interactive features that will best deliver pages to users. Our responsive designs build multifaceted products that are compatible with electronic devices varying in size.</p>
           </div>
           <div class="col-md-4">
             <img id="brandingDesignIcon" src="img/icons/design.png" />
             <h4>branding design</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-            <ul>
-              <li>Logos</li>
-              <li>Print and Web</li>
-              <li>Social Media</li>
-            </ul>
+            <p>Imagery is an important feature of today’s increasingly visual world. Our designers possess the artistic abilities and strategic knowledge required to create iconic logos responsible for building a solid brand identity. We also provide graphic design for print and social media to help tell a brand’s story across multiple platforms.</p>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- <div id="team">
-      <div class="container">
-        <h2 id="teamTitle">our team.</h2>
-        <div id="salmanImg" class="team-image col-md-3">
-          <div class="overlay">
-            <div class="icon">
-              <a href="http://linkedin.com/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-              <a href="http://linkedin.com/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-              <a href="http://linkedin.com/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+
+    <div class= "container" id="team">
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <h2 id="teamTitle">Our Team.</h2>
+          <br>
+        </div>
+        <div class="ih-item circle effect3 left_to_right">
+          <div class="col-sm-4 text-center">
+            <div class="imgWrap">
+            <img src="img/team/salman.jpeg" id="profile-image">
+              <div class="imgDescription"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
+              </div>
+            <div class="overlay">
+              <h3>Salman Salem</h2>
+              <p>Business Development & Full Stack Developer</p>
             </div>
           </div>
         </div>
-        <div id="kenanImg" class="team-image col-md-3">
-          <div class="overlay">
+        <div class="ih-item circle effect3 left_to_right">
+          <div class="col-sm-4 text-center">
+            <div class="imgWrap">
+              <img src="img/team/kenan.jpg" id="profile-image">
+              <div class="imgDescription"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
+            </div>
+            <div class="overlay">
+              <h3>Kenan Philips</h2>
+              <p>Front End Developer & Designer</p>
+            </div>
           </div>
         </div>
-        <div id="lynImg" class="team-image col-md-3">
-          <div class="overlay">
-          </div>
-        </div>
-        <div id="tongImg" class="team-image col-md-3">
-          <div class="overlay">
+        <div class="ih-item circle effect3 left_to_right">
+          <div class="col-sm-4 text-center">
+            <div class="imgWrap">
+              <img src="img/team/lyn.jpeg" id="profile-image">
+              <div class="imgDescription"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
+            </div>
+            <div class="overlay">
+              <h3>Lyn Lee</h2>
+              <p>Back End Developer</p>
+            </div>
           </div>
         </div>
       </div>
-    </div> -->
+      <br>
+      <br>
+        <div class="col-sm-2">
+        </div>
+        <div class="ih-item circle effect3 left_to_right">
+          <div class="col-sm-4 text-center">
+            <div class="imgWrap">
+              <img src="img/team/tong.jpeg" id="profile-image">
+              <div class="imgDescription"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
+            </div>
+            <div class="overlay">
+              <h3>Tong Wei</h2>
+              <p>Full Stack Developer</p>
+            </div>
+          </div>
+        </div>
+        <div class="ih-item circle effect3 left_to_right">
+          <div class="col-sm-4 text-center">
+            <div class="imgWrap">
+              <img src="img/team/wilson.png" id="profile-image">
+              <div class="imgDescription"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
+            </div>
+            <div class="overlay">
+              <h3>Wilson Lu</h2>
+              <p>Back End Developer</p>
+            </div>
+          </div>
+        </div>
+    </div>
+
 
     <div id="work">
       <div class="container">
-        <h2 id="workTitle">our work.</h2>
         <div class="row col-lg-12">
+          <h2 id="workTitle">our work.</h2>
           <div id="eChartz">
             <div id="eChartzContent" class="col-md-6 col-sm-12">
               <img id="eChartzLogo" src="img/echartz.png" alt="eChartz"/>
               <p>eChartz is a simple web application, built with Node.js, for making dynamic two dimensional charts. Users can enter their data or copy and paste their own excel data into the table and generate charts based on it.</p>
-              <a href="http://echartz.herokuapp.com/">check it out here!</a>
+              <a href="http://echartz.herokuapp.com/" target="_blank">check it out here!</a>
             </div>
             <div id="eChartzImage" class="col-md-6 col-sm-12">
               <a href="http://echartz.herokuapp.com/">
@@ -128,7 +163,7 @@
             <div id="oddjobsContent" class="col-md-6 col-sm-12">
               <img id="oddjobsLogo" src="img/oddjobs-logo.png" alt="Oddjobs" />
               <p>oddjobs is a clean, minimalist inspired site built with Ruby on Rails. It's a place where students can find small day or weekend jobs that fit into their busy school schedules. </p>
-              <a href="http://kenanphilips-oddjobs.herokuapp.com/">check it out here!</a>
+              <a href="http://kenanphilips-oddjobs.herokuapp.com/" target="_blank">check it out here!</a>
             </div>
             <div id="oddjobsImage" class="col-md-6 col-sm-12">
               <a href="http://kenanphilips-oddjobs.herokuapp.com/">
@@ -141,7 +176,7 @@
             <div id="mappinContent" class="col-md-6 col-sm-12">
               <img id="mappinLogo" src="img/mappin-logo.png" alt="Mappin" />
               <p>map’pin is an ongoing project and a local online social networking community based on the users location. Built with Ruby on Rails and heavily relying on Google Maps API, map'pin is a clean, beautiful and functional application.</p>
-              <a href="http://mappinyvr.herokuapp.com/">check it out here!</a>
+              <a href="http://mappinyvr.herokuapp.com/" target="_blank">check it out here!</a>
             </div>
             <div id="mappinImage" class="col-md-6 col-sm-12">
               <a href="http://mappinyvr.herokuapp.com/">
@@ -152,46 +187,75 @@
       </div>
     </div>
 
-
-
     <div id="contact" class="contact bg-primary">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading">Contact Us</h2>
-            <h3 class="section-subheading text-muted">We'll get back to you ASAP!</h3>
+            <h2 class="section-heading" id="contactTitle">Contact Us</h2>
+            <h4 class="section-subheading text-muted">We'll get back to you ASAP!</h3>
           </div>
         </div>
         <div class="row">
           <div class="col-lg-12">
-            <form name="sentMessage" id="contactForm" novalidate>
+
+            <!--  Original Form -->
+
+            <!-- <form name="sentMessage" id="contact_form">
+              <div class="row">
+                <div class="col-md-6"> -->
+                  <!-- <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Name *" id="name" name="name">
+                  </div> -->
+                  <!-- <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Email *" id="email" name="email" />
+                    <p class="help-block text-danger"></p>
+                  </div> -->
+                  <!-- <div class="form-group">
+                    <input type="tel" class="form-control" placeholder="Phone *" id="phone" name="phone" />
+                    <p class="help-block text-danger"></p>
+                  </div> -->
+                <!-- </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <textarea class="form-control" placeholder="Message *" id="message" name="message"></textarea>
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div> -->
+                <!-- <div class="clearfix"></div>
+                <div class="col-lg-12 text-center"> -->
+                  <!-- <div id="success"></div> -->
+                  <!-- <button id="contactButton" type="submit" class="btn btn-xl">submit</button> -->
+                <!-- </div>
+              </div>
+            </form> -->
+
+
+            <!-- New form with validation -->
+
+            <form name="sentMessage" id="contactForm">
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Name *" id="name" required data-validation-required-message="Please enter your name."data-bv-message="The username is not valid"
-
-                required
-                data-bv-notempty-message="The username is required and cannot be empty"
-
-                pattern="[a-zA-Z0-9]+"
-                data-bv-regexp-message="The username can only consist of alphabetical, number" />
-                    <p class="help-block text-danger"></p>
+                    <input name="name" placeholder="Name *" class="form-control" type="text" id="name">
                   </div>
                   <div class="form-group">
-                    <input type="email" class="form-control" placeholder="Email *" id="email" required data-validation-required-message="Please enter your email address.">
-                    <p class="help-block text-danger"></p>
+                    <input name="email" placeholder="Email *" class="form-control" type="text" id="email">
                   </div>
                   <div class="form-group">
-                    <input type="tel" class="form-control" placeholder="Phone *" id="phone" required data-validation-required-message="Please enter your phone number.">
-                    <p class="help-block text-danger"></p>
+                    <input name="phone" placeholder="Phone *" class="form-control" type="text" id="phone">
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
-                    <textarea class="form-control" placeholder="Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                    <textarea class="form-control" name="comment" placeholder="message *" id="message"></textarea>
                     <p class="help-block text-danger"></p>
                   </div>
                 </div>
+
+          <!-- Success message -->
+          <!-- <div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting us, we will get back to you shortly.</div> -->
+
+              <!-- Button -->
                 <div class="clearfix"></div>
                 <div class="col-lg-12 text-center">
                   <div id="success"></div>
@@ -199,25 +263,29 @@
                 </div>
               </div>
             </form>
+
           </div>
         </div>
       </div>
     </div>
+
 
     <footer>
       <hr>
       <div class="container">
         <p>&copy; 2016 uppercase<br><a href="mailto:info@uppercaseyvr.com">info@uppercaseyvr.com</a></p>
         <div id="socialMedia">
-          <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-          <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-          <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a href="https://www.facebook.com/uppercaseyvr/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          <a href="https://twitter.com/uppercase_yvr" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          <a href="https://www.instagram.com/uppercaseyvr/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/company/uppercase-development-&-design/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
         </div>
       </div>
     </footer>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src= "https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/js/bootstrapValidator.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
   </body>

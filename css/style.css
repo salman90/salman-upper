@@ -1,3 +1,4 @@
+
 @font-face {
   font-family: 'Brandon Grotesque';
   src: url('../fonts/BrandonGrotesque-Regular.eot?') format('eot'),
@@ -35,6 +36,19 @@ html, body {
   -moz-transition: all .2s ease-in-out;
   -o-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
+}
+
+#tag {
+  display: inline-block;
+  font-family: "Brandon Grotesque";
+  margin-top: 15px;
+  color: #FFFFFF;
+  font-size: 17px;
+  letter-spacing: 0.5px;
+}
+
+#tag>span {
+  color: #FF7F66;
 }
 
 .navbar-brand>img:hover {
@@ -112,11 +126,11 @@ html, body {
 }
 
 video#backgroundVideo {
-  height: auto;
   width: 100%;
+  height: auto;
 }
 
-p#backgroundText {
+#backgroundText {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -131,9 +145,9 @@ p#backgroundText {
   font-size: 40px;
 }
 
-#background>button {
+ #background button {
   position: absolute;
-  top: 65%;
+  top: 60%;
   left: 50%;
   width: 20%;
   transform: translateX(-50%) translateY(-50%);
@@ -151,7 +165,7 @@ p#backgroundText {
   transition: all .2s ease-in;
 }
 
-#background>button:hover {
+#background button:hover {
   background-color: #FFFFFF;
   color: #3E454C;
 }
@@ -166,7 +180,7 @@ div#aboutText {
   margin-top: 5%;
 }
 
-h2#aboutTitle, h2#teamTitle, h2#workTitle {
+h2#aboutTitle, h2#teamTitle, h2#workTitle, h2#teamTitle {
   font-family: "Brandon Grotesque Bold";
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -227,8 +241,9 @@ div h4 {
   font-size: 15px;
 }
 
-/*div#team {
+div#team {
   padding-top: 6%;
+  font-family: "Brandon Grotesque";
 }
 
 div#salmanImg {
@@ -247,47 +262,28 @@ div#tongImg {
   background-image: url('../img/team/tong.jpeg');
 }
 
-.team-image {
-  text-align: center;
-  position:relative;
-  display: inline-block;
-  width:300px;
-  height:300px;
-  margin: 50px;
-  background-size: cover;
-  background-position: center;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  overflow: hidden;
-  cursor: default;
+div#wilsonImg {
+  background-image: url('../img/team/wilson.png');
 }
 
-.team-image .overlay {
-  background: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  margin: auto;
-  width: 0px;
-  height: 0px;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -o-border-radius: 50%;
+#profile-image {
+  max-width: 250px;
+  max-height: 250px;
   border-radius: 50%;
-  opacity: 0;
-  -webkit-transition: .5s ease;
-  -moz-transition: .5s ease;
-  -o-transition: .5s ease;
-  transition: .5s ease;
 }
 
-.team-image:hover .overlay {
-  opacity: 1;
-  width: 100%;
-  height: 100%;
+.overlay {
+  padding-bottom: 50px;
+}
+
+.overlay>h3 {
+  font-family: "Brandon Grotesque Bold";
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.overlay>p {
+  text-transform: lowercase;
 }
 
 i {
@@ -301,7 +297,7 @@ i:hover {
 .icon{
   color: white;
   margin: 50%;
-}*/
+}
 
 #work {
   padding-top: 7%;
@@ -346,6 +342,10 @@ h2#workTitle {
   width: 100%;
   float: right;
   border: 5px solid #7ECEFD;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 
 #oddjobsLogo {
@@ -356,20 +356,23 @@ h2#workTitle {
 #oddjobsImage img {
   width: 100%;
   border: 5px solid #7ECEFD;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 
 #oddjobsImage {
   margin-top: 80px;
 }
 
+#oddjobsImage img:hover, #eChartzImage img:hover, #mappinImage img:hover {
+  opacity: 0.5;
+}
+
 #oddjobsContent {
-<<<<<<< HEAD
-  margin-top: 100px;
-  padding-top: 30px;
-=======
   margin-top: 80px;
   padding-top: 40px;
->>>>>>> bc33f9977bda5ac9c1ae5e437786004544c0aa74
   margin-bottom: 50px;
   float: right;
 }
@@ -385,12 +388,7 @@ h2#workTitle {
 
 #mappinContent {
   margin-top: 100px;
-<<<<<<< HEAD
   padding-top: 20px;
-=======
-  padding-top: 30px;
-
->>>>>>> bc33f9977bda5ac9c1ae5e437786004544c0aa74
 }
 
 div#contact {
@@ -524,6 +522,8 @@ div.contact ul.list-social li.social-google-plus a:hover {
   transition: all .2s ease-in;
   width: 25%;
   text-transform: uppercase;
+  padding: 10px;
+  letter-spacing: 2px;
 }
 
 #contactButton:hover {
@@ -566,4 +566,184 @@ footer #socialMedia {
 
 #socialMedia a i.fa-instagram {
   color: #833AB4;
+}
+
+#socialMedia a i.fa-linkedin {
+  color: #0077B5;
+}
+
+#socialMedia a i:hover {
+  opacity: 0.8;
+}
+
+/* RESPONSIVE STYLING */
+@media only screen and (max-device-width: 768px) {
+  /*.imgDescription {
+    margin-right: 20px;
+  }*/
+}
+
+@media only screen and (max-device-width: 768px) {
+  .navbar-toggle.collapsed {
+    border: 0px;
+  }
+
+  .navbar-brand>img {
+    margin-top: -28px;
+  }
+
+  #backgroundText {
+    transform: translateX(-50%) translateY(-200%);
+  }
+
+  #background button {
+    transform: translateX(-50%) translateY(-300%);
+  }
+
+  #eChartzContent {
+    margin-bottom: 20px;
+  }
+
+  #oddjobsImage {
+    margin-top: 0px;
+  }
+
+  #oddjobsContent {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  #mappinImage {
+    margin-top: 0px;
+  }
+
+  #mappinContent {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  h2#workTitle {
+    padding-bottom: 0px;
+    margin: 0px;
+    margin-top: 7%;
+  }
+
+  h2#contactTitle {
+    margin-top: 7%;
+  }
+
+  #contactButton {
+    width: 100%;
+  }
+
+  footer>hr {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-device-width: 480px) {
+
+  .navbar-brand>img {
+    width: 125px;
+    margin-top: -22px;
+  }
+
+  #backgroundText {
+    transform: translateX(-50%) translateY(-900%);
+    font-size: 20px;
+  }
+
+  #background button {
+    display: none;
+  }
+
+  h2#workTitle {
+    padding-bottom: 0px;
+    margin: 0px;
+    margin-top: 10%;
+  }
+
+  h2#aboutTitle {
+    margin: 0px;
+    margin-top: 10%;
+  }
+
+  h2#contactTitle {
+    margin: 0px;
+    margin-top: 10%;
+  }
+
+  #contactButton {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-device-width: 412px) {
+  #background p {
+    transform: translateX(-50%) translateY(-850%);
+  }
+}
+
+@media only screen and (max-device-width: 375px) {
+  #background p {
+    transform: translateX(-50%) translateY(-1000%);
+  }
+}
+
+@media only screen and (max-device-width: 360px) {
+  #background p {
+    transform: translateX(-50%) translateY(-800%);
+  }
+}
+
+@media only screen and (max-device-width: 320px) {
+  #background p {
+    transform: translateX(-50%) translateY(-700%);
+  }
+}
+
+ /*#profile-image {
+   opacity: 1;
+ 	-webkit-transition: .3s ease-in-out;
+ 	transition: .3s ease-in-out;
+ }
+
+#profile-image:hover {
+  opacity: .5;
+}*/
+
+
+.imgWrap .imgDescription {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  color: #fff;
+  opacity: 0;
+  margin: auto 0;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+
+.imgWrap:hover .imgDescription {
+  visibility: visible;
+  opacity: 0.7;
+  background-color: #333;
+}
+
+.imgDescription>p {
+  margin-top: 50px;
+  color: #FFFFFF;
+  font-family: "Brandon Grotesque";
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
 }
