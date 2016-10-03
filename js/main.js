@@ -106,6 +106,7 @@ $(window).scroll(function() {
 // validation
 
 $(document).ready(function() {
+  $('#success_message').hide();
   $('#contactForm').bootstrapValidator({
       // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
     feedbackIcons: {
@@ -156,7 +157,7 @@ $(document).ready(function() {
       }
     })
   .on('success.form.bv', function(e) {
-    // $('#success_message').slideDown({ opacity: "show" }, "slow") // Do something ...
+    $('#success_message').slideDown({ opacity: "show" }, "slow") // Do something ...
     //   $('#contactForm').data('bootstrapValidator').resetForm();
     //
     // // Prevent form submission
@@ -191,6 +192,6 @@ $(document).ready(function() {
          console.log(error);
        }
     });
-     e.preventDefault();
+    e.preventDefault();
   });
 });
