@@ -66,6 +66,35 @@ html, body {
   transition: background-color 0.5s ease-in-out;
 }
 
+.navbar-default-project-pages {
+  background-color: rgb(62, 69, 76);
+  border: 0px;
+  border-radius: 0px;
+  -webkit-transition: background-color 0.5s ease-in-out;
+  -moz-transition: background-color 0.5s ease-in-out;
+  -ms-transition: background-color 0.5s ease-in-out;
+  -o-transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.navbar-default-project-pages .navbar-nav>li>a {
+  text-transform: uppercase;
+  font-family: "Brandon Grotesque Bold";
+  letter-spacing: 3px;
+  color: #FFFFFF;
+  -moz-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+  position: relative;
+  text-decoration: none;
+  padding-bottom: 5px;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 15px;
+}
+
 .navbar-default .navbar-nav>li>a {
   text-transform: uppercase;
   font-family: "Brandon Grotesque Bold";
@@ -145,6 +174,16 @@ video#backgroundVideo {
   font-size: 40px;
 }
 
+#modalContent div {
+  height: 400;
+}
+
+
+#modalContianer {
+  /* height: x; */
+  /* border: 2px solid black; */
+  align-items: 'center'
+}
  #background button {
   position: absolute;
   top: 60%;
@@ -171,6 +210,11 @@ video#backgroundVideo {
 }
 
 div#about {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+div#liveScore {
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -333,6 +377,8 @@ h2#workTitle {
   text-decoration: none;
 }
 
+
+
 #eChartzLogo {
   width: 100px;
   margin-bottom: 10px;
@@ -341,6 +387,39 @@ h2#workTitle {
 #eChartzImage img, #mappinImage img {
   width: 100%;
   float: right;
+  border: 5px solid #7ECEFD;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+#liveScoreLogo {
+  width: 150px;
+  height: 100px;
+}
+#screenShotLiveScore{
+  width: 300px;
+  height: 300px;
+}
+#screenShotLiveScore{
+  width: 300px;
+  height: 300px;
+}
+
+.column{
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+
+#liveScore {
+  margin-top: 80px;
+}
+
+#liveScore img {
+  width: 100%;
+  height: 200;
   border: 5px solid #7ECEFD;
   -webkit-transition: all .2s ease-in-out;
   -moz-transition: all .2s ease-in-out;
@@ -361,6 +440,8 @@ h2#workTitle {
   -o-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
 }
+
+
 
 #oddjobsImage {
   margin-top: 80px;
